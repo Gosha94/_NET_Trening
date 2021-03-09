@@ -1,0 +1,56 @@
+﻿<Window x:Class="SlidersAndAnimationWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlidersAndAnimationWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Width="50" HorizontalAlignment="Left" Background="YellowGreen">
+        <Grid.Style>
+            <Style TargetType="{x:Type Grid}">
+                <Style.Triggers>
+                    <EventTrigger RoutedEvent="MouseEnter">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetProperty="Width" To=" 150" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="MouseLeave">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetProperty="Width" To=" 50" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Style>        
+    </Grid>
+        <Button x:Name="btn_AnimHeight" Background="Black" Width="50" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,10,0,0" Click="btn_AnimHeight_Click">
+            <TextBlock Text="HEIGHT" Foreground="Wheat"/>
+        </Button>
+        <Grid Name="grd_AnimHeight" HorizontalAlignment="Left" Width="50" Height="50" Background="Coral" Margin="60,0,0,0"/>
+
+        <Button x:Name="btn_AnimUp" Background="Black" Width="50" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,10,0,0" Click="btn_AnimUp_Click">
+            <TextBlock Text="UP" Foreground="Wheat"/>
+        </Button>
+        <Grid Name="grd_AnimUp" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="50" Height="50" Background="LightBlue" Margin="150,0,0,185"/>
+
+        <Button x:Name="btn_AnimWidth" Background="Black" Width="50" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,10,0,0" Click="btn_AnimWidth_Click">
+            <TextBlock Text="WIDTH" Foreground="Wheat"/>
+        </Button>
+        <Grid Name="grd_AnimWidth" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="50" Height="50" Background="Bisque" Margin="250,0,0,185"/>
+
+        <Button x:Name="btn_AnimTranslate" Background="Black" Width="50" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,10,0,0" Click="btn_AnimTranslate_Click">
+            <TextBlock Text="TRANSLATE" Foreground="Wheat"/>
+        </Button>
+        <Grid Name="grd_AnimTranslate" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="50" Height="50" Background="Goldenrod" Margin="350,0,0,185"/>
+    </Grid>
+</Window>

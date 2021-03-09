@@ -1,0 +1,17 @@
+﻿<Window x:Class="FrontendLearning.DockStackPanels.DockStackPanels"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrontendLearning.DockStackPanels"
+        mc:Ignorable="d"
+        Title="Компоновка с помощью Dock Panel и Stack Panel" Height="450" Width="800">
+    <DockPanel LastChildFill="True" MinWidth="400" MinHeight="300">
+        <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right" 
+                    Orientation="Horizontal" MinWidth="40">
+            <Button Margin="5" Padding="5">Ok</Button>
+            <Button Margin="5" Padding="5">Cancel</Button>
+        </StackPanel>
+        <TextBox DockPanel.Dock="Top" Margin="5" FontSize="15" BorderThickness="3" BorderBrush="LightBlue" Text="Some text..."/>
+    </DockPanel>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="MaterialDesignWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialDesignWpf"
+        mc:Ignorable="d"
+        Title="Material Design Test" Height="600" Width="800">
+    <Grid Background="#f2faf6">
+        <Border MinWidth="400" MaxWidth="550" CornerRadius="20" Margin="15" Background="White" VerticalAlignment="Center" Padding="30">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="DodgerBlue" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Hello, User!" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
+                <Grid Margin="0 0 0 20">
+                    <Button HorizontalAlignment="Left" Content="Регистрация"/>
+                    <Button HorizontalAlignment="Right" Content="Войти" Click="btn_Auth_Click" Style="{StaticResource MaterialDesignFlatButton}"/>                    
+                </Grid>
+
+                <TextBox x:Name="txtBx_Login" materialDesign:HintAssist.Hint="Введите логин:" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox x:Name="pswBx_pasOrig" materialDesign:HintAssist.Hint="Введите пароль:" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <PasswordBox x:Name="pswBx_pasRepeat" materialDesign:HintAssist.Hint="Повторите пароль:" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <TextBox x:Name="txtBx_Email" materialDesign:HintAssist.Hint="Введите Email:" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <Button x:Name="btn_Reg" Content="Зарегистрироваться" Margin="0 20" Click="btn_Register_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

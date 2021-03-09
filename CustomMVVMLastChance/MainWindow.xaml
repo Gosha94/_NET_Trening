@@ -1,0 +1,38 @@
+﻿<Window x:Class="CustomMVVMLastChance.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomMVVMLastChance"
+        mc:Ignorable="d"
+        Title="Files Info" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox 
+            Grid.Column="0"
+            ItemsSource="{Binding files}"
+            SelectedItem="{Binding selectedFile}">
+            <ListBox.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Margin="5">
+                    <TextBlock Text="{Binding Path=Id}" />
+                    <TextBlock Text="{Binding Path=Name}" />
+                    <TextBlock Text="{Binding Path=Size}" />
+                </StackPanel>
+            </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1" DataContext="{Binding selectedFile}">
+            <TextBlock Text="Выбранный элемент"  />
+            <TextBlock Text="ИД" />
+            <TextBox Text="{Binding Id, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="Имя файла" />
+            <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="Размер файла" />
+            <TextBox Text="{Binding Size, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+    </Grid>
+</Window>
