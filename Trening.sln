@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks.ConsoleUI", "Tasks.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async_Await_CodeBlog", "Async_Await_CodeBlog\Async_Await_CodeBlog.csproj", "{E5CA2FD4-9F05-4390-BC8D-61093AD4DF40}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generics", "Generics", "{D55A77A7-8A08-4074-AB7A-D8904F23F163}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
