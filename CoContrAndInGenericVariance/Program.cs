@@ -23,10 +23,18 @@ namespace CoContrAndInGenericVariance
 
             // Для значимых типов, например DateTime, вариантность невозможна, т.к. в куче создается новый экземпляр при упаковке
             IEnumerable<DateTime> dates = new List<DateTime> { DateTime.Now, DateTime.UtcNow };
-            ProcessCollection(dates);
+            //ProcessCollection(dates); // Error
 
             IEnumerable<string> strings = new List<string> { "Hello", "World" };
             ProcessCollection(strings);
+
+            int n1 = 1, n2 = 3;
+            Swap(ref n1, ref n2);
+
+            Swap<int>(ref n1, ref n2);
+
+            string s1 = "Ivan", s2 = "Petrov";
+            Swap(ref s1, ref s2);
 
         }
 
@@ -48,6 +56,22 @@ namespace CoContrAndInGenericVariance
 
         // Выведение типов - особый механизм языка
         // При наличии нескольких методов, среди которых есть необобщенный метод, предпочтение отдается необобщенной реализации метода
+                
+        private static void Swap<T>(ref T var1, ref T var2)
+        {
+            Console.WriteLine("Generic Swap");
+            T temp = var1;
+            var1 = var2;
+            var2 = temp;
+        }
+
+        private static void Swap(ref int var1, ref int var2)
+        {
+            Console.WriteLine("Standard Integer Swap");
+            int temp = var1;
+            var1 = var2;
+            var2 = temp;
+        }
 
         /*
         Параметры типа (MyClass<T>) отсутствуют у следующих конструкций C#:

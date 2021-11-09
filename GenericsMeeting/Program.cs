@@ -1,7 +1,6 @@
-﻿using GenericsMeeting.ConcreteTypes;
-using GenericsMeeting.Contracts;
-using System;
+﻿using GenericsMeeting.Contracts;
 using System.Collections.Generic;
+using GenericsMeeting.ConcreteTypes;
 
 namespace GenericsMeeting
 {
@@ -18,7 +17,7 @@ namespace GenericsMeeting
             {
                 class1,
                 struct1,
-                wrong
+                //wrong // Error
             };            
 
         }
