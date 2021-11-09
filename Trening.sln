@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoContrAndInGenericVariance
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsConstraints", "GenericsConstraints\GenericsConstraints.csproj", "{EBF3C5DF-AEE4-41EB-95A3-B8766DE904F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsMeeting", "GenericsMeeting\GenericsMeeting.csproj", "{FBD5E6C9-2C60-4335-BE18-4B339ACBD1B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{EBF3C5DF-AEE4-41EB-95A3-B8766DE904F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBF3C5DF-AEE4-41EB-95A3-B8766DE904F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBF3C5DF-AEE4-41EB-95A3-B8766DE904F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD5E6C9-2C60-4335-BE18-4B339ACBD1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD5E6C9-2C60-4335-BE18-4B339ACBD1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD5E6C9-2C60-4335-BE18-4B339ACBD1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD5E6C9-2C60-4335-BE18-4B339ACBD1B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,6 +171,7 @@ Global
 		{BB5B3DDB-3630-4478-AC74-3D2CBD8BAB20} = {D55A77A7-8A08-4074-AB7A-D8904F23F163}
 		{4551A8ED-48C8-4073-8058-7421C5A23322} = {D55A77A7-8A08-4074-AB7A-D8904F23F163}
 		{EBF3C5DF-AEE4-41EB-95A3-B8766DE904F4} = {D55A77A7-8A08-4074-AB7A-D8904F23F163}
+		{FBD5E6C9-2C60-4335-BE18-4B339ACBD1B0} = {D55A77A7-8A08-4074-AB7A-D8904F23F163}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {435F064E-0F44-482E-8994-8DABE00007EA}
