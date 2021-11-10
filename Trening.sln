@@ -51,11 +51,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueVsReferenceCollections
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenCloseGenerics", "OpenCloseGenerics\OpenCloseGenerics.csproj", "{BB5B3DDB-3630-4478-AC74-3D2CBD8BAB20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoContrAndInGenericVariance", "CoContrAndInGenericVariance\CoContrAndInGenericVariance.csproj", "{4551A8ED-48C8-4073-8058-7421C5A23322}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoContrAndInGenericVariance", "CoContrAndInGenericVariance\CoContrAndInGenericVariance.csproj", "{4551A8ED-48C8-4073-8058-7421C5A23322}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsConstraints", "GenericsConstraints\GenericsConstraints.csproj", "{EBF3C5DF-AEE4-41EB-95A3-B8766DE904F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsConstraints", "GenericsConstraints\GenericsConstraints.csproj", "{EBF3C5DF-AEE4-41EB-95A3-B8766DE904F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsMeeting", "GenericsMeeting\GenericsMeeting.csproj", "{FBD5E6C9-2C60-4335-BE18-4B339ACBD1B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsMeeting", "GenericsMeeting\GenericsMeeting.csproj", "{FBD5E6C9-2C60-4335-BE18-4B339ACBD1B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{38D51167-CD3B-496B-9450-E4723A50AEDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
