@@ -59,13 +59,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsMeeting", "Generics
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{38D51167-CD3B-496B-9450-E4723A50AEDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparePoints", "ComparePoints\ComparePoints.csproj", "{E05FA263-777B-4A01-BC6B-400A64A4776E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComparePoints", "ComparePoints\ComparePoints.csproj", "{E05FA263-777B-4A01-BC6B-400A64A4776E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultInterfaceImplementation", "DefaultInterfaceImplementation\DefaultInterfaceImplementation.csproj", "{70E5E023-3559-401D-8D53-31CDEFAA7D4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefaultInterfaceImplementation", "DefaultInterfaceImplementation\DefaultInterfaceImplementation.csproj", "{70E5E023-3559-401D-8D53-31CDEFAA7D4B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfacesNameConflict", "InterfacesNameConflict\InterfacesNameConflict.csproj", "{F292CB82-DB52-432C-AA7A-92599FC26363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsInterfaces", "GenericsInterfaces\GenericsInterfaces.csproj", "{8DF903CB-CCFD-4679-AE17-F87A0D21383F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsInterfaces", "GenericsInterfaces\GenericsInterfaces.csproj", "{8DF903CB-CCFD-4679-AE17-F87A0D21383F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceWithDefaultMethod", "InterfaceWithDefaultMethod\InterfaceWithDefaultMethod.csproj", "{99DEADA3-BD2E-43D8-A2D4-F22C916309B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dates", "Dates", "{C5F61F3A-0A72-4C3F-8C6E-771EE6325AEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeOffsets", "DateTimeOffsets\DateTimeOffsets.csproj", "{8CC3A1DD-569C-487E-8572-7E5E5038FD83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{173DF222-7EEC-4C00-BC79-FFC56FD43A33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopPrinciples", "OopPrinciples\OopPrinciples.csproj", "{C7E80CB1-F187-4102-B87F-56D7F462C243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +195,18 @@ Global
 		{8DF903CB-CCFD-4679-AE17-F87A0D21383F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DF903CB-CCFD-4679-AE17-F87A0D21383F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DF903CB-CCFD-4679-AE17-F87A0D21383F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DEADA3-BD2E-43D8-A2D4-F22C916309B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DEADA3-BD2E-43D8-A2D4-F22C916309B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DEADA3-BD2E-43D8-A2D4-F22C916309B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DEADA3-BD2E-43D8-A2D4-F22C916309B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC3A1DD-569C-487E-8572-7E5E5038FD83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC3A1DD-569C-487E-8572-7E5E5038FD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC3A1DD-569C-487E-8572-7E5E5038FD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC3A1DD-569C-487E-8572-7E5E5038FD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E80CB1-F187-4102-B87F-56D7F462C243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E80CB1-F187-4102-B87F-56D7F462C243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E80CB1-F187-4102-B87F-56D7F462C243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E80CB1-F187-4102-B87F-56D7F462C243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,6 +224,9 @@ Global
 		{70E5E023-3559-401D-8D53-31CDEFAA7D4B} = {38D51167-CD3B-496B-9450-E4723A50AEDA}
 		{F292CB82-DB52-432C-AA7A-92599FC26363} = {38D51167-CD3B-496B-9450-E4723A50AEDA}
 		{8DF903CB-CCFD-4679-AE17-F87A0D21383F} = {38D51167-CD3B-496B-9450-E4723A50AEDA}
+		{99DEADA3-BD2E-43D8-A2D4-F22C916309B1} = {38D51167-CD3B-496B-9450-E4723A50AEDA}
+		{8CC3A1DD-569C-487E-8572-7E5E5038FD83} = {C5F61F3A-0A72-4C3F-8C6E-771EE6325AEB}
+		{C7E80CB1-F187-4102-B87F-56D7F462C243} = {173DF222-7EEC-4C00-BC79-FFC56FD43A33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {435F064E-0F44-482E-8994-8DABE00007EA}
