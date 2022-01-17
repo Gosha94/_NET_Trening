@@ -40,8 +40,8 @@ namespace GenericsMeeting
 
 
             Min(5, 7);
-            Min(5, 7.5);
-            Min(5.9, 7);
+           // Min(5, 7.5);
+            //Min(5.9, 7);
 
             var b = new Base();
             var c = new Child();

@@ -10,11 +10,11 @@ namespace DefaultInterfaceImplementation
         {
 
             var pizzeria = new Pizzeria();
-            pizzeria.GetMenu(); // Метод GetMenu() недоступен у экземпляра класса, т.к. класс не имеет собственной реализации данного метода
+            //pizzeria.GetMenu(); // Метод GetMenu() недоступен у экземпляра класса, т.к. класс не имеет собственной реализации данного метода
             ((IRestaurant)pizzeria).GetMenu(); // Можем обратиться к реализации интерфейса по умолчанию через приведение к экземплярному типу
 
             var burgerBar = new BurgerBar();
-            burgerBar.GetMenu(); // Метод GetMenu() недоступен у экземпляра класса, т.к. класс имеет явную реализацию интерфейсного метода, то есть вынесунную из интерфейса в класс
+            //burgerBar.GetMenu(); // Метод GetMenu() недоступен у экземпляра класса, т.к. класс имеет явную реализацию интерфейсного метода, то есть вынесунную из интерфейса в класс
             ((IRestaurant)burgerBar).GetMenu(); // И нам все равно нужно привести наш класс к интерфейсу
 
             var chineseRestaurant = new ChineseRestaurant();

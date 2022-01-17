@@ -30,7 +30,7 @@ namespace GenericsConstraints.Types
         {
             var user = new SecondaryInterfaceConstraint<InterfaceImplementor>(); // Допустимо, т.к. класс InterfaceImplementor реализует интерфейсы IComparable, IEquatable
             var ok = new SecondaryInterfaceConstraint<string>(); // Допустимо, т.к. string реализует интерфейсы IComparable, IEquatable
-            var wrong = new SecondaryInterfaceConstraint<Stream>(); // Ошибка, т.к. Stream не реализует интерфейсы IComparable, IEquatable
+            //var wrong = new SecondaryInterfaceConstraint<Stream>(); // Ошибка, т.к. Stream не реализует интерфейсы IComparable, IEquatable
         }
 
     }

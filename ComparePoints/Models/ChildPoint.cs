@@ -20,10 +20,10 @@ namespace ComparePoints.Models
 
         // Не можем переопределить
         // override TestSealedMethod
-        public override int TestSealedMethod(Point other)
-        {
-            return base.TestSealedMethod(other);
-        }
+        //public override int TestSealedMethod(Point other)
+        //{
+        //    return base.TestSealedMethod(other);
+        //}
 
     }
 }

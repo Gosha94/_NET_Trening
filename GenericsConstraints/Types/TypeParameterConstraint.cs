@@ -36,7 +36,7 @@ namespace GenericsConstraints.Types
             IList<string> ls2 = ConvertIList<string, String>(ls);
 
             // Преобразуем IList<string> в IList<Exception>
-            IList<Exception> le = ConvertIList<string, Exception>(ls); // Ошибка, string и Exception несовместимы между собой
+           // IList<Exception> le = ConvertIList<string, Exception>(ls); // Ошибка, string и Exception несовместимы между собой
 
         }
 

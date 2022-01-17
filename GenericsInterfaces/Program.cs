@@ -96,7 +96,7 @@ namespace GenericsInterfaces
             // Выявление ошибки во время написания кода
             // Статический анализатор VS умеет замечать несоответствие:
             // в качестве аргумента ожидается int а передаем string
-            comparable.CompareTo("2");
+            //comparable.CompareTo("2");
 
             Console.WriteLine("Without boxing");
         }

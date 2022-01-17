@@ -6,8 +6,8 @@ namespace GenericsMeeting.ErrorsWithGenerics
     {
         private static void CastingAGenericTypeVariable1<T>(T obj)
         {
-            Int32 x = (Int32)obj;   // Ошибка синтаксиса
-            String s = (String)obj; // Ошибка синтаксиса
+            //Int32 x = (Int32)obj;   // Ошибка синтаксиса
+            //String s = (String)obj; // Ошибка синтаксиса
         }
 
         // Получаем Runtime Exception, т.к не контролируется входной параметр-тип (Говнокод)
